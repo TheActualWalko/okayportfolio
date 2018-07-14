@@ -1,0 +1,240 @@
+html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a, a:visited, a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: 1px solid black;
+  color: black;
+  padding: 14px 33px;
+  font-size: 14px;
+}
+
+h1, h2 {
+  font-size: 42px;
+}
+
+h2, h3 {
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.5;
+}
+
+ul li {
+  display:inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+ul li+li {
+  margin-left: 10px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+*+h2, *+h3, *+button {
+  margin-top: 40px;
+}
+
+*+ul {
+  margin-top: 30px;
+}
+
+*+p {
+  margin-top: 20px;
+}
+
+p+p {
+  margin-top: 0;
+}
+
+section p, 
+section h2, 
+section h3 {
+  max-width: 440px;
+}
+
+section > .juxtapose {
+  padding: 0;
+}
+
+section > img {
+  min-height: 600px;
+}
+
+.juxtapose {
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.primary, .secondary {
+  width: 50%;
+  padding: 100px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.primary {
+  padding-right: 60px;
+}
+
+.secondary {
+  padding-left: 60px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo, header nav {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  transition: color 0.1s ease, background-color 0.1s ease;
+}
+
+header .logo {
+  height: 100px;
+  padding-left: 100px;
+  width: 50%;
+  justify-content: flex-start;
+}
+
+header nav {
+  height: 100px;
+  padding-right: 100px;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+header nav a+a {
+  margin-left: 40px;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.hero .primary {
+  justify-content: center;
+  color: black;
+}
+
+.hero .secondary {
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+footer {
+  padding: 100px 100px;
+  text-align: center;
+}
+
+
+
+/* Overrides for landing page */
+
+.landing header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+.landing .hero .primary {
+  background-color: white;
+  color: black;
+}
+
+.landing .primary,
+.landing .secondary {
+  background-color: black;
+  color: white;
+}
+
+.who .primary, 
+.who .secondary {
+  justify-content: flex-start;
+}
+
+
+
+/* Work page */
+
+.work header {
+  position: static;
+  margin-bottom: 100px;
+}
+
+.work article {
+  margin: 0 20px 20px 20px;
+  height: 420px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.work article aside {
+  flex-grow: 0;
+  max-width: 340px;
+  margin: 80px 80px
+}
+
+.work article .image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.work .elicient {
+  color: white;
+  background-image: linear-gradient(60deg, #674577, #1E1224);
+}
+
+.work .elicient .image {
+  background-position: 50% 80%;
+  max-width: 800px;
+}
+
+
+.work .treklee {
+  background-color: #F5F5F5;
+}
+
+.work .treklee .image {
+  background-position: 50% 100%;
+  max-width: 644px;
+}
+
+.work .moov {
+  color: white;
+  background-image: linear-gradient(90deg, #8DA8FF, #698DFF);
+}
+
+.work .moov .image {
+  background-size: contain;
+  background-position: 100% 100%;
+  height: calc(100% - 80px);
+  margin: 40px 200px;
+}
